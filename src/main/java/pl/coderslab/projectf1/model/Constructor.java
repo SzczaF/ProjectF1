@@ -1,18 +1,13 @@
 package pl.coderslab.projectf1.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Size;
-import lombok.*;
-import org.hibernate.Hibernate;
+import lombok.Data;
 
-import java.util.Objects;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name="constructors")
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
+@Data
 public class Constructor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,17 +20,4 @@ public class Constructor {
     String nationality;
     @Size(max = 255)
     String url;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Constructor that = (Constructor) o;
-        return getConstructorId() != null && Objects.equals(getConstructorId(), that.getConstructorId());
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }
