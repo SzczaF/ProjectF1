@@ -7,11 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+
+<jsp:include page="../menu.jsp"/>
 
 
 Lista Torów<br><br>
@@ -33,12 +30,12 @@ Lista Torów<br><br>
             <td>${circuit.country}</td>
             <td>${circuit.url}</td>
             <td>
-                <a href="/book/form/edit/${circuit.circuitId}">
+                <a href="/circuit/form/edit/${circuit.circuitId}">
                     <button>Edytuj</button>
                 </a>
             </td>
             <td>
-                <a href="/book/form/confirm/${circuit.circuitId}">
+                <a href="/circuit/form/confirm/${circuit.circuitId}">
                     <button style="color: darkred">Usuń</button>
                 </a>
             </td>

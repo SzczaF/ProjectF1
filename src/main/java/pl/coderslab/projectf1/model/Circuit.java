@@ -1,10 +1,9 @@
 package pl.coderslab.projectf1.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
-
-import javax.validation.constraints.Null;
-import javax.validation.constraints.Size;
 
 
 @Entity
@@ -14,18 +13,28 @@ public class Circuit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long circuitId;
-    @Size(max = 255)
-    String circuitRef;
+    int circuitId;
+
+    @NotBlank
     @Size(max = 255)
     String name;
+
+    @Size(max = 255)
+    String circuitRef;
+
     @Size(max = 255)
     String location;
+
+    @NotBlank
     @Size(max = 255)
     String country;
+
     float lat;
+
     float lng;
+
     Integer alt;
+
     @Size(max = 255)
     String url;
 
