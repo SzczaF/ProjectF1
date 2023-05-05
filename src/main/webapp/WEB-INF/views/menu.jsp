@@ -33,7 +33,28 @@
         }
 
         li a:hover {
-            background-color: cornflowerblue;
+            /*background-color: cornflowerblue;*/
+            background-color: rgb(255, 94, 94);
+            transition: 0.5s ease;
+
+        }
+        li a {
+            /*background-color: cornflowerblue;*/
+            transition: 0.5s ease;
+
+        }
+        .news-link:hover {
+            background-color: rgba(134, 119, 119, 0.28);
+            transition: 1s ease;
+        }
+        .news-link {
+            transition: 1s ease;
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        .news-details {
+            text-align: justify;
         }
 
         div.button {

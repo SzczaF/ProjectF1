@@ -15,11 +15,13 @@
 
 
 <c:forEach items="${newsList}" var="news">
-    <div style="max-width: 50%">
-        <a href="news-details/${news.id}" style="text-decoration: none; color: inherit">
-            <h2>${news.title}</h2>
-            <p>${news.description}</p>
-            <i style="font-size: 0.8rem">${news.dateTime} - ${news.user.userName}</i>
+    <div class="news-link" style="max-width: 50%">
+        <a href="news-details/${news.id}" style="text-decoration: none; color: inherit; text-align: justify">
+            <div>
+                <h2>${news.title}</h2>
+                <p>${news.description}</p>
+                <i style="font-size: 0.8rem">${news.dateTime} - ${news.user.userName}</i>
+            </div>
         </a>
         <hr style="border: 1px solid lightgray">
     </div>
