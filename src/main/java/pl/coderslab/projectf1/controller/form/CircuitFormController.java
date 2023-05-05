@@ -1,4 +1,4 @@
-package pl.coderslab.projectf1.controller;
+package pl.coderslab.projectf1.controller.form;
 
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -22,18 +22,16 @@ import jakarta.validation.Valid;
 public class CircuitFormController {
 
     private final CircuitRepository circuitRepository;
-    private static final Logger logger = LoggerFactory.getLogger(CircuitFormController.class);
+//    private static final Logger logger = LoggerFactory.getLogger(CircuitFormController.class);
     @GetMapping("/add")
     public String add(Model model) {
         model.addAttribute("circuit", new Circuit());
-        model.asMap().forEach((k, v) -> logger.debug(k + ": " + v));
+//        model.asMap().forEach((k, v) -> logger.debug(k + ": " + v));
         return "/circuit/form";
     }
 
     @PostMapping("/add")
     public String addSave(@Valid Circuit circuit, BindingResult result) {
-        System.out.println(circuit);
-        System.out.println(result);
         if (result.hasErrors()) {
             return "circuit/form";
         }

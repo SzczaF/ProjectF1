@@ -11,7 +11,7 @@ import jakarta.validation.constraints.Size;
 public class Constructor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int constructorId;
+    private Integer constructorId;
     @Size(max = 255)
     String constructorRef;
     @Size(max = 255)

@@ -5,20 +5,17 @@
 <jsp:include page="../menu.jsp"/>
 
 
-<form:form method="post" modelAttribute="circuit">
+<form:form method="post" modelAttribute="constructor">
 <%--    <form:errors path="*"/><br>--%>
 
-    StringID: <form:input path="circuitRef"/><br>
-    <form:errors path="circuitRef"/><br>
+    StringID: <form:input path="constructorRef"/><br>
+    <form:errors path="constructorRef"/><br>
 
     Name: <form:input path="name"/><br>
     <form:errors path="name"/><br>
 
-    Location: <form:input path="location"/><br>
-    <form:errors path="location"/><br>
-
-    Country: <form:input path="country"/><br>
-    <form:errors path="country"/><br>
+    Nationality: <form:input path="nationality"/><br>
+    <form:errors path="nationality"/><br>
 
     URL: <form:input path="url"/><br>
     <form:errors path="url"/><br>

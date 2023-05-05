@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>BookStore</title>
+    <title>F1 Results - by SzczaF :)</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <style>
         body {
@@ -100,10 +100,11 @@
 <body>
 <ul>
     <li><a href="/circuit/all">Tory</a></li>
-<%--    <li><a href="/author/all">Autorzy</a></li>--%>
-<%--    <li><a href="/publisher/all">Wydawcy </a></li>--%>
+    <li><a href="/constructor/all">Konstruktorzy</a></li>
+    <li><a href="/constructorResult/all">Rezultaty Konstruktorów</a></li>
+
     <li><a href="/circuit/form/add">Dodaj Tor</a></li>
-<%--    <li><a href="/author/form/add">Dodaj autora</a></li>--%>
-<%--    <li><a href="/publisher/form/add">Dodaj wydawcę</a></li>--%>
+    <li><a href="/constructor/form/add">Dodaj konstruktora</a></li>
+    <li><a href="/constructorResult/form/add">Dodaj Rezultat Konstruktorów</a></li>
 </ul>
 <br>
