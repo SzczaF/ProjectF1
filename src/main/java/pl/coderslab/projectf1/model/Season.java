@@ -14,6 +14,7 @@ import lombok.Setter;
 })
 public class Season {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "year", nullable = false)
     private Integer id;
 

@@ -15,12 +15,11 @@ import pl.coderslab.projectf1.model.Race;
 import pl.coderslab.projectf1.repository.ConstructorRepository;
 import pl.coderslab.projectf1.repository.ConstructorResultRepository;
 import pl.coderslab.projectf1.repository.RaceRepository;
-import pl.coderslab.projectf1.repository.StatusRepository;
 
 import java.util.List;
 
 @Controller
-@RequestMapping("/constructorResults/form")
+@RequestMapping("/constructorResult/form")
 @RequiredArgsConstructor
 public class ConstructorResultsFormController {
 
@@ -38,10 +37,10 @@ public class ConstructorResultsFormController {
     @PostMapping("/add")
     public String addSave(@Valid ConstructorResult constructorResults, BindingResult result) {
         if (result.hasErrors()) {
-            return "constructorResults/form";
+            return "constructorResult/form";
         }
         constructorResultRepository.save(constructorResults);
-        return "redirect:/constructorResults/all";
+        return "redirect:/constructorResult/all";
     }
 
     @ModelAttribute("constructorList")

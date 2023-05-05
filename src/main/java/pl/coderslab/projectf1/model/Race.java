@@ -17,6 +17,7 @@ import java.time.LocalTime;
 })
 public class Race {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "raceId", nullable = false)
     private Integer id;
 

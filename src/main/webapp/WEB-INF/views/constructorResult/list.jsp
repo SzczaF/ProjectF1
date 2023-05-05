@@ -11,7 +11,7 @@
 <jsp:include page="../menu.jsp"/>
 
 
-Lista Torów<br><br>
+Wyniki konstruktorów<br><br>
 <table border="1">
     <tr>
         <td>ID</td>
@@ -23,7 +23,7 @@ Lista Torów<br><br>
     <c:forEach items="${constructorResults}" var="constrResults">
         <tr>
             <td>${constrResults.id}</td>
-            <td>${constrResults.races.name}</td>
+            <td>${constrResults.races.nameAndYear}</td>
             <td>${constrResults.constructors.name}</td>
             <td>${constrResults.points}</td>
             <td>${constrResults.status}</td>

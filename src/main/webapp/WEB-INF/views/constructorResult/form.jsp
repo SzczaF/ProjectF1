@@ -5,21 +5,21 @@
 <jsp:include page="../menu.jsp"/>
 
 
-<form:form method="post" modelAttribute="constructorResult">
+<form:form method="post" modelAttribute="constructorResults">
 <%--    <form:errors path="*"/><br>--%>
 
     Wyścig <form:select path="races">
         <form:option value="0" label="-- wybierz --"/>
-        <form:options items="${raceList}" itemLabel="NameAndYear" itemValue="raceId"/>
+        <form:options items="${raceList}" itemLabel="NameAndYear" itemValue="id"/>
     </form:select><br>
-    <form:errors path="race"/><br>
+    <form:errors path="races"/><br>
 
 
-    Konstruktor  <form:select path="constructors">
+    Konstruktor:  <form:select path="constructors">
     <form:option value="0" label="-- wybierz --"/>
     <form:options items="${constructorList}" itemLabel="name" itemValue="constructorId"/>
     </form:select><br>
-    <form:errors path="race"/><br>
+    <form:errors path="constructors"/><br>
 
     Punkty: <form:input path="points" type="number"/><br>
     <form:errors path="points"/><br>

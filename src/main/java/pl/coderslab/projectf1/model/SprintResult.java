@@ -14,6 +14,7 @@ import lombok.Setter;
 })
 public class SprintResult {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "sprintResultId", nullable = false)
     private Integer id;
 

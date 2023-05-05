@@ -12,6 +12,7 @@ import lombok.Setter;
         @Index(name = "raceId", columnList = "raceId")
 })
 public class LapTime {
+
     @EmbeddedId
     private LapTimeId id;
 

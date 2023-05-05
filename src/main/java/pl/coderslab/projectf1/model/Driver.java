@@ -16,6 +16,7 @@ import java.time.LocalDate;
 })
 public class Driver {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "driverId", nullable = false)
     private Integer id;
 

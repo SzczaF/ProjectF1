@@ -11,7 +11,7 @@
 <jsp:include page="../menu.jsp"/>
 
 
-Lista Torów<br><br>
+Lista Konstruktorów<br><br>
 <table border="1">
     <tr>
         <td>ID</td>
