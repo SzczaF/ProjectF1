@@ -15,7 +15,7 @@ public class ConstructorResultController {
 
     @RequestMapping("/all")
     public String all(Model model){
-        model.addAttribute("constructorResults", constructorResultRepository.findAll());
+        model.addAttribute("constructorResults", constructorResultRepository.findFirst10ByOrderById());
         return "/constructorResult/list";
     }
 }
