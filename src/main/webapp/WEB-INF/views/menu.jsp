@@ -4,10 +4,12 @@
 <html>
 <head>
     <title>F1 Results - by SzczaF :)</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <style>
         body {
-            font-family: "Ubuntu", sans-serif;
+            font-family: "Roboto", sans-serif;
+            background-color: #222;
+            color: ghostwhite;
         }
 
         ul {
@@ -15,7 +17,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: darkblue;
+            background-color: #922;
         }
 
         li {
@@ -99,6 +101,7 @@
 </head>
 <body>
 <ul>
+    <li><a href="/">News</a></li>
     <li><a href="/circuit/all">Tory</a></li>
     <li><a href="/constructor/all">Konstruktorzy</a></li>
     <li><a href="/constructorResult/all">Rezultaty Konstruktorów</a></li>

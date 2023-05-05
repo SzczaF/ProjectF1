@@ -1,7 +1,6 @@
 package pl.coderslab.projectf1.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
@@ -11,7 +10,6 @@ import lombok.Data;
 @Data
 public class ConstructorResult {
     @Id
-    @Column(name = "constructorResultsId", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
